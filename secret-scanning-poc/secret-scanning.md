@@ -7,7 +7,7 @@
 ---
 
 
-# 📘 Table of Contents
+## 📘 Table of Contents
 
 - [Understanding Secret Scanning](#understanding-secret-scanning)
 - [Objective of This PoC](#objective-of-this-poc)
