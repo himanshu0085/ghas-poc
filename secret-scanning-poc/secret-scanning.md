@@ -1,4 +1,4 @@
-# Secret Scanning PoC
+# Secret Scanning PoC – GitHub Advanced Security (GHAS)
 **Owner:** Himanshu Parashar  
 **Mentors:** Deepak Gupta / Deepak Chauhan  
 **Date:** 19 Nov 2025  
