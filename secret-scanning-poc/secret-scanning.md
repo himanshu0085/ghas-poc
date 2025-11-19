@@ -60,6 +60,7 @@ Inside it, create one file:
 ```
 secret-scanning.txt
 ```
+<img width="1288" height="690" alt="image" src="https://github.com/user-attachments/assets/7e8ad12a-d7b8-41f6-b6e7-7a16c2e3a0e9" />
 
 ---
 
