@@ -109,7 +109,12 @@ Once enabled, GitHub will automatically scan **new commits** for exposed secrets
 # 🕒 Expected Flow
 
 1. After enabling the feature, go to the **Security** tab in your repository  
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/ab542c44-fd12-496b-82a1-4cb47e259228" />
+
 2. GitHub scans the newly pushed content  
 3. Secret alerts appear under **Security → Secret Scanning**  
+<img width="1300" height="833" alt="image" src="https://github.com/user-attachments/assets/b33b7c94-4062-48a8-adbb-12c192382669" />
+
 4. You will validate alerts and capture screenshots  
 5. Alerts can then be marked as **resolved**, **revoked**, or **dismissed**
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/dec38880-6ef4-432b-8822-27703d2cfea6" />
