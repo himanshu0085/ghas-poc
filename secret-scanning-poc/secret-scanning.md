@@ -60,10 +60,6 @@ Inside it, create one file:
 ```
 secret-scanning.txt
 ```
-
-
-<img width="1288" height="690" alt="image" src="https://github.com/user-attachments/assets/7e8ad12a-d7b8-41f6-b6e7-7a16c2e3a0e9" />
-
 ---
 
 # 🧪 Content for `secret-scanning.txt`
@@ -75,6 +71,9 @@ ghp_FAKEPAT1234567890abcdefghijklmnopqrstuvwxyz12
 AKIA1234567890FAKEKEY
 sk_test_4eC39HqLyjWDarjtT1zdp7dc
 ```
+
+<img width="1288" height="690" alt="image" src="https://github.com/user-attachments/assets/7e8ad12a-d7b8-41f6-b6e7-7a16c2e3a0e9" />
+
 
 Commit and push the file to the **main** branch.
 
