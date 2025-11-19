@@ -118,3 +118,26 @@ Once enabled, GitHub will automatically scan **new commits** for exposed secrets
 4. You will validate alerts and capture screenshots  
 5. Alerts can then be marked as **resolved**, **revoked**, or **dismissed**
 <img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/dec38880-6ef4-432b-8822-27703d2cfea6" />
+
+---
+
+## 🏷️ Closure Reasons Explained
+
+GitHub requires selecting a valid reason before marking alerts as resolved:
+
+| Close Reason   | When to Use It                                  | What It Means                                          |
+|----------------|--------------------------------------------------|--------------------------------------------------------|
+| **Revoked**    | When the leaked secret is invalidated or rotated | Secret cannot be exploited anymore                     |
+| **Used in tests** | Demo/sandbox/testing credentials only        | No real risk to production                             |
+| **False positive** | Detection is incorrect                      | Not actually a real secret                             |
+| **Won’t fix**  | Accepted risk in PoC/demo                       | No remediation needed — but risky if used in production |
+
+---
+
+### 📌 Best Practices
+
+- ✔ Always rotate real secrets immediately  
+- ✔ Use **“Used in tests”** only for intentionally fake/testing keys  
+- ✔ Use **“False positive”** only when 100% sure  
+- ✔ Avoid **“Won’t fix”** unless in a safe PoC environment  
+
