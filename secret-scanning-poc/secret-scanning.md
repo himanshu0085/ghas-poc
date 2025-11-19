@@ -9,14 +9,14 @@
 
 # 📘 Table of Contents
 
-- [Understanding Secret Scanning](#-understanding-secret-scanning)
-- [Objective of This PoC](#-objective-of-this-poc)
-- [Repository Setup](#-repository-setup)
-- [Content for secret-scanningtxt](#-content-for-secret-scanningtxt)
-- [Enable Secret Scanning](#️-enable-secret-scanning)
-- [Expected Flow](#-expected-flow)
-- [Closure Reasons Explained](#-closure-reasons-explained)
-- [Best Practices](#-best-practices)
+- [Understanding Secret Scanning](#understanding-secret-scanning)
+- [Objective of This PoC](#objective-of-this-poc)
+- [Repository Setup](#repository-setup)
+- [Content for secret-scanningtxt](#content-for-secret-scanningtxt)
+- [Enable Secret Scanning](#enable-secret-scanning)
+- [Expected Flow](#expected-flow)
+- [Closure Reasons Explained](#closure-reasons-explained)
+- [Best Practices](#best-practices)
 
 
 ---
