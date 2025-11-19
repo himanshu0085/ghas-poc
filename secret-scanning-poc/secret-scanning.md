@@ -1,5 +1,5 @@
 # 🚀 Secret Scanning PoC
-**Owner:** Himanshu Parashar**
+**Owner:** Himanshu Parashar
 **Mentors:** Deepak Gupta / Deepak Chauhan
 **Date:** 19 Nov 2025
 **Contact:** himanshu.parashar.snaatak@mygurukulam.co
