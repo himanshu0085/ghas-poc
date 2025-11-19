@@ -89,6 +89,9 @@ Before detection begins, ensure Secret Scanning is enabled for the repository.
 
 ### **2️⃣ Navigate to “Code security and analysis” / “Advanced Security”**
 
+<img width="1292" height="619" alt="image" src="https://github.com/user-attachments/assets/78bc8019-fb47-4ef3-9b34-beb2d42b4c45" />
+
+
 ### **3️⃣ Under “Secret Protection”, enable:**
 - **Secret scanning**
 - *(Optional)* **Push protection**
