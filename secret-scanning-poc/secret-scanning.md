@@ -1,4 +1,4 @@
-# 🚀 Secret Scanning PoC
+# Secret Scanning PoC
 **Owner:** Himanshu Parashar  
 **Mentors:** Deepak Gupta / Deepak Chauhan  
 **Date:** 19 Nov 2025  
@@ -7,7 +7,7 @@
 ---
 
 
-## 📘 Table of Contents
+## Table of Contents
 
 - [Understanding Secret Scanning](#understanding-secret-scanning)
 - [Objective of This PoC](#objective-of-this-poc)
@@ -21,7 +21,7 @@
 
 ---
 
-## Understanding Secret Scanning  🔍
+## Understanding Secret Scanning
 
 Secret Scanning is a GitHub Advanced Security (GHAS) capability that automatically identifies exposed credentials inside a repository. GitHub scans:
 
@@ -40,7 +40,7 @@ This PoC demonstrates adding sample secrets, pushing them to GitHub, observing t
 
 ---
 
-## Objective of This PoC  🎯
+## Objective of This PoC
 
 - Create a single file containing multiple credential patterns  
 - Push the file to a public repository  
@@ -50,7 +50,7 @@ This PoC demonstrates adding sample secrets, pushing them to GitHub, observing t
 
 ---
 
-## Repository Setup  📁
+## Repository Setup
 
 Create a dedicated folder in your repository:
 
@@ -65,7 +65,7 @@ secret-scanning.txt
 ```
 ---
 
-## Content for `secret-scanning.txt`  🧪
+## Content for `secret-scanning.txt`
 
 Paste the following sample secrets into the file:
 
@@ -84,7 +84,7 @@ This file will be used to demonstrate GitHub's Secret Scanning feature.
 
 ---
 
-## Enable Secret Scanning  🛠️
+## Enable Secret Scanning
 
 Before detection begins, ensure Secret Scanning is enabled for the repository.
 
@@ -109,7 +109,7 @@ Once enabled, GitHub will automatically scan **new commits** for exposed secrets
 
 ---
 
-## Expected Flow  🕒
+## Expected Flow
 
 1. After enabling the feature, go to the **Security** tab in your repository  
 <img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/ab542c44-fd12-496b-82a1-4cb47e259228" />
@@ -124,7 +124,7 @@ Once enabled, GitHub will automatically scan **new commits** for exposed secrets
 
 ---
 
-## Closure Reasons Explained  🏷️
+## Closure Reasons Explained
 
 GitHub requires selecting a valid reason before marking alerts as resolved:
 
@@ -137,7 +137,7 @@ GitHub requires selecting a valid reason before marking alerts as resolved:
 
 ---
 
-## Best Practices  📌
+## Best Practices
 
 - ✔ Always rotate real secrets immediately  
 - ✔ Use **“Used in tests”** only for intentionally fake/testing keys  
