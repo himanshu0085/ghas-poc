@@ -35,6 +35,17 @@ When a supported secret pattern is detected, GitHub generates an alert under:
 This PoC demonstrates adding sample secrets, pushing them to GitHub, observing the alerts, and documenting the workflow.
 
 ---
+
+# 🎯 Objective of This PoC
+
+- Create a single file containing multiple credential patterns  
+- Push the file to a public repository  
+- Trigger secret-scanning alerts  
+- Validate and record alert details through screenshots  
+- Understand how alerts are reviewed and resolved  
+
+---
+
 # 📁 Repository Setup
 
 Create a dedicated folder in your repository:
