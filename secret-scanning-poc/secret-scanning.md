@@ -94,7 +94,10 @@ Before detection begins, ensure Secret Scanning is enabled for the repository.
 
 ### **3️⃣ Under “Secret Protection”, enable:**
 - **Secret scanning**
+  <img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/d010885a-f5f0-420f-9177-a02e9ddccee8" />
+
 - *(Optional)* **Push protection**
+
 
 Once enabled, GitHub will automatically scan **new commits** for exposed secrets.
 
