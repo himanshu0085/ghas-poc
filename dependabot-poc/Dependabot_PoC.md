@@ -51,6 +51,7 @@ Initialize a basic Node.js project:
 ```bash
 cd dependabot-poc
 npm init -y
+```
 
 ---
 
@@ -72,6 +73,7 @@ Create `index.js`:
 
 ```javascript
 console.log("Dependabot scanning PoC running...");
+```
 
 Commit & Push changes:
 
@@ -79,7 +81,7 @@ Commit & Push changes:
 git add .
 git commit -m "Added vulnerable dependencies for Dependabot PoC"
 git push
-
+```
 ---
 
 ## Enable Dependabot Security Updates ⚙️
