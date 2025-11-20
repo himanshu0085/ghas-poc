@@ -81,7 +81,6 @@ Initial vulnerable code committed to repo.
 
 📍 `.github/workflows/codeql.yml`
 
-📸 Screenshot Placeholder → CodeQL Workflow added
 
 ---
 
@@ -96,8 +95,13 @@ After workflow runs, CodeQL will report vulnerabilities:
 | Hardcoded Secret | High | ✔ Yes |
 | Missing rate limiting | Medium | ✔ Yes |
 
-📸 Screenshot Placeholder → CodeQL Alerts Screen
-📸 Screenshot Placeholder → Individual alert with description
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/da3bc3c2-434b-4086-a2b6-47907ebb2d7e" />
+
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/f634762b-4270-4104-b64c-3554c5609abf" />
+
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/82efb8bb-33ce-417e-8148-4c22442a7732" />
+
+
 
 ---
 
@@ -116,7 +120,15 @@ Mitigations included:
 | Hardcoded Secret | Environment variables |
 | Missing Rate Limiting | Added global rate limiter |
 
-📸 Screenshot Placeholder → Pull request / commit with fix
+<img width="1284" height="594" alt="image" src="https://github.com/user-attachments/assets/4cd8c614-7928-4d39-b935-1ee84db32c0c" />
+
+<img width="1284" height="594" alt="image" src="https://github.com/user-attachments/assets/f81e906c-6167-4d89-86b4-e289dba0024c" />
+
+<img width="1284" height="594" alt="image" src="https://github.com/user-attachments/assets/eca1f6db-c04e-432e-af42-99729ad9e030" />
+
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/c229678a-8723-49c1-b82c-5fdb5db629ea" />
+
+
 
 ---
 
@@ -128,7 +140,7 @@ After remediation push:
 ✔ Alerts update to **Resolved** or can be manually closed  
 ✔ Select valid closure reason (e.g., “Fixed”)  
 
-📸 Screenshot Placeholder → Alert marked resolved
+
 
 ---
 
@@ -140,7 +152,3 @@ After remediation push:
 - Monitor Security dashboard for regression alerts  
 
 ---
-
-> 🏁 Result: Code Scanning (CodeQL) PoC successfully implemented with real alert → fix → resolution workflow.
-
-**Next Step:** Dependabot PoC → introducing vulnerable dependency and validating auto-remediation.
