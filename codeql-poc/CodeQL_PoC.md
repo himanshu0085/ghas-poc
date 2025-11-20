@@ -68,7 +68,8 @@ Initial vulnerable code committed to repo.
 - ❌ Hardcoded secret  
 - ❌ Missing rate limiting  
 
-📎 Screenshot Placeholder → **Add Code here from GitHub UI**
+<img width="1288" height="614" alt="image" src="https://github.com/user-attachments/assets/cf91d1ca-3d33-4e65-9705-9d1f55cfbdc7" />
+
 
 ---
 
