@@ -8,13 +8,14 @@
 
 ## 📘 Table of Contents
 - [What is Dependency Scanning?](#what-is-dependency-scanning)
-- [Objective of This PoC](#objective-of-this-poc)
-- [Repository Setup](#repository-setup)
-- [Add Vulnerable Dependencies](#add-vulnerable-dependencies)
-- [Enable Dependabot Security Updates](#enable-dependabot-security-updates)
-- [Expected Alerts](#expected-alerts)
-- [Apply Auto-Fix via Dependabot PR](#apply-auto-fix-via-dependabot-pr)
-- [Best Practices](#best-practices)
+- [Objective of This PoC 🎯](#objective-of-this-poc-)
+- [Repository Setup 📁](#repository-setup-)
+- [Add Vulnerable Dependencies ⚠️](#add-vulnerable-dependencies-️)
+- [Enable Dependabot Security Updates ⚙️](#enable-dependabot-security-updates-️)
+- [Expected Alerts 🚨](#expected-alerts-)
+- [Apply Auto-Fix via Dependabot PR 🔧](#apply-auto-fix-via-dependabot-pr-)
+- [Best Practices 📌](#best-practices-)
+- [Conclusion 🏁](#conclusion-)
 
 ---
 
