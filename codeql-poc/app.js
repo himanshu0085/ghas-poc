@@ -1,4 +1,4 @@
-#// 🚀 Fully Secure Version
+// 🚀 Fully Secure Version
 
 const express = require("express");
 const app = express();
