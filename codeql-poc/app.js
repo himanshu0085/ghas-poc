@@ -1,13 +1,12 @@
-// ✅ Secure Version - CodeQL Alerts Fixed
+// 🚀 Fully Secure Version
 
 const express = require("express");
 const app = express();
-const mysql = require("mysql2"); // Secure DB library
+const mysql = require("mysql2");
+const rateLimit = require("express-rate-limit");
 
-// Secret should NOT be hardcoded — use environment variable
 const SECRET_KEY = process.env.APP_SECRET_KEY;
 
-// Use parameterized DB connection
 const db = mysql.createPool({
     host: "localhost",
     user: process.env.DB_USER,
@@ -15,27 +14,33 @@ const db = mysql.createPool({
     database: "testdb"
 });
 
-// Secure XSS protection by escaping output
+// Rate limiting middleware
+const limiter = rateLimit({
+    windowMs: 1 * 60 * 1000, // 1 minute
+    max: 10,
+    message: "Too many requests, slow down!"
+});
+app.use(limiter);
+
 const escapeHtml = (unsafe) =>
     unsafe.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+// Safe XSS handling
 app.get("/greet", (req, res) => {
     const name = req.query.name || "Guest";
     res.send(`<h1>Hello ${escapeHtml(name)}</h1>`);
-    // ✔ XSS Mitigated
 });
 
+// Safe SQL query
 app.get("/user/:id", (req, res) => {
     const userId = req.params.id;
-
     const query = "SELECT * FROM users WHERE id = ?";
     db.query(query, [userId], (err, result) => {
         if (err) return res.status(500).send("DB Error");
         res.json(result);
     });
-    // ✔ SQL Injection Prevented
 });
 
 app.listen(3000, () => {
-    console.log("Secure server running on 3000");
+    console.log("Secure server running on 3000 with rate limiting");
 });
