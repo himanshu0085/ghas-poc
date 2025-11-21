@@ -15,11 +15,11 @@ cd repo
 echo "⚙️ Creating CodeQL DB..."
 codeql database create db --language=javascript --source-root=.
 
-echo "🔍 Running local JavaScript queries..."
+echo "🔍 Running CodeQL JS Security + Quality..."
 codeql database analyze db \
-  /opt/codeql/packs/javascript \
+  /opt/codeql/packs/codeql/javascript/ql/src/codeql-suites/javascript-security-and-quality.qls \
   --threads=0 \
   --format=sarifv2.1.0 \
   --output=results.sarif
 
-echo "📌 Scan complete! Results saved to results.sarif"
+echo "📌 Scan complete: /scan/repo/results.sarif"
