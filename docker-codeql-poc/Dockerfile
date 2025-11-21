@@ -12,11 +12,9 @@ RUN curl -L -o codeql.zip https://github.com/github/codeql-cli-binaries/releases
 
 ENV PATH="/opt/codeql:/opt/codeql/codeql:$PATH"
 
-# Install JavaScript query pack (offline local pack install)
+# Clone entire CodeQL packs repository (includes metadata + dependencies)
 RUN mkdir -p /opt/codeql/packs \
-    && git clone --depth 1 https://github.com/github/codeql.git /opt/github-codeql \
-    && cp -r /opt/github-codeql/javascript/ql/src /opt/codeql/packs/javascript \
-    && rm -rf /opt/github-codeql
+    && git clone --depth 1 https://github.com/github/codeql.git /opt/codeql/packs/codeql
 
 WORKDIR /scan
 
