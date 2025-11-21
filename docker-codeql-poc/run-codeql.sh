@@ -15,7 +15,7 @@ cd repo
 echo "⚙️ Creating CodeQL DB..."
 codeql database create db --language=javascript --source-root=.
 
-echo "🔍 Running CodeQL JavaScript Code Scanning queries..."
+echo "🔍 Running JavaScript Security Code Scanning queries..."
 codeql database analyze db \
   codeql/javascript-code-scanning \
   --format=sarifv2.1.0 \
