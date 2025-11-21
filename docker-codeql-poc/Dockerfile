@@ -13,4 +13,5 @@ RUN curl -L -o codeql.zip https://github.com/github/codeql-cli-binaries/releases
 ENV PATH="/opt/codeql:/opt/codeql/codeql:${PATH}"
 
 WORKDIR /scan
-ENTRYPOINT ["bash"]
+
+ENTRYPOINT ["/bin/bash"]
