@@ -16,7 +16,8 @@
 - [7️⃣ Screenshots](#-7️⃣-screenshots)
 - [8️⃣ What This PoC Demonstrates](#-8️⃣-what-this-poc-demonstrates)
 - [9️⃣ Future Enhancements](#-9️⃣-future-enhancements)
-- [🔟 Summary](#-🔟-summary)
+- [Summary](#summary)
+
 
 ---
 
