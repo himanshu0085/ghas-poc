@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 REPO_URL=$1
 BRANCH=${2:-main}
@@ -11,10 +12,13 @@ fi
 git clone -b "$BRANCH" "$REPO_URL" repo
 cd repo
 
+echo "⚙️ Creating CodeQL DB..."
 codeql database create db --language=javascript --source-root=.
 
+echo "🔍 Running CodeQL JavaScript Code Scanning queries..."
 codeql database analyze db \
-  /opt/codeql/javascript/ql/src/codeql-suites/javascript-code-scanning.qls \
-  --format=sarifv2.1.0 --output=results.sarif
+  codeql/javascript-code-scanning \
+  --format=sarifv2.1.0 \
+  --output=results.sarif
 
 echo "📌 Scan complete! Results saved to results.sarif"
