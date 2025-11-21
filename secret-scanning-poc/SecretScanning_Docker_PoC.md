@@ -92,7 +92,7 @@ cat results.json | jq
 
 ✔ Uses GitHub REST API  
 ✔ Retrieves all alert metadata  
-✔ Saves & displays Beautiful JSON output 😍
+✔ Saves & displays JSON output
 
 ## **⚙ 6️⃣ How to Run the Scan**
 
