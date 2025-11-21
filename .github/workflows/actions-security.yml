@@ -1,0 +1,12 @@
+name: Actions Security PoC
+on: [push, pull_request]
+
+jobs:
+  insecure-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+
+      - name: Run insecure script
+        run: echo "This workflow needs improvement!"
