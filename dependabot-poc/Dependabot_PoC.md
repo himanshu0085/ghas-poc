@@ -165,6 +165,6 @@ This PoC confirms:
 - 🔐 Dependabot correctly identified vulnerable dependencies  
 - 🔔 Alerts were visible inside GitHub Security Dashboard  
 - 🔧 Auto-generated PRs patched vulnerabilities  
-- 🛡 The application security posture improved  
+- 🛡 The application security posture improved 
 
 ---
