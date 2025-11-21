@@ -94,6 +94,11 @@ Enable:
 - ✔ **Dependabot alerts**
 - ✔ **Dependabot security updates**
 
+<img width="1292" height="619" alt="image" src="https://github.com/user-attachments/assets/c74da134-6937-4ed8-b061-9d12d09436ba" />
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/f5bedad4-d3e7-495a-857e-743be881f8aa" />
+
+
+
 ---
 
 ## Expected Alerts 🚨
@@ -107,6 +112,8 @@ Dependabot will detect two vulnerabilities:
 
 View them in:
 ➡ **Security → Dependabot → Alerts**
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/45779eaa-beb8-4f85-8fee-b4ffeab9e84e" />
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/54b0858e-2046-4f63-9acf-84b3e11ee1a9" />
 
 ---
 
@@ -117,14 +124,25 @@ Dependabot will automatically generate:
 - 📌 PR #1 — Upgrade **lodash**
 - 📌 PR #2 — Upgrade **axios**
 
+<img width="1300" height="615" alt="image" src="https://github.com/user-attachments/assets/0b8d773f-7d0b-491a-bab1-d0ad50c59d08" />
+<img width="1056" height="572" alt="image" src="https://github.com/user-attachments/assets/548869a7-301d-46a0-98a0-c18d8cf81892" />
+<img width="1073" height="553" alt="image" src="https://github.com/user-attachments/assets/fb1cacdf-f6d7-4fa1-9915-8c7048a27752" />
+
+
+
 ✔ Your tasks:
 - Review both PRs  
 - Merge to the main branch  
 - Confirm GitHub checks pass  
 
+<img width="1075" height="564" alt="image" src="https://github.com/user-attachments/assets/bb4ba953-e0d7-4cc6-96e3-7709e3ab13a0" />
+
+
 ➡ After merging:
 - ✔ Alerts marked **Resolved**
 - ✔ Dependency tree becomes secure
+
+<img width="1270" height="598" alt="image" src="https://github.com/user-attachments/assets/1d0424ba-52a4-4871-addf-824a27bcec0c" />
 
 ---
 
