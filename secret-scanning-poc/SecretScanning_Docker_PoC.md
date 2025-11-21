@@ -5,6 +5,22 @@
 **Date:** 21 Nov 2025  
 **Contact:** [himanshu.parashar.snaatak@mygurukulam.co](mailto:himanshu.parashar.snaatak@mygurukulam.co)
 
+---
+## 📑 Table of Contents
+- [1️⃣ Overview](#-1️⃣-overview)
+- [2️⃣ Dockerized Workflow Architecture](#-2️⃣-dockerized-workflow-architecture)
+- [3️⃣ Project Structure](#-3️⃣-project-structure)
+- [4️⃣ Dockerfile Explanation](#-4️⃣-dockerfile-explanation)
+- [5️⃣ scan.sh Script Explanation](#-5️⃣-scansh-script-explanation)
+- [6️⃣ How to Run the Scan](#-6️⃣-how-to-run-the-scan)
+- [7️⃣ Screenshots](#-7️⃣-screenshots)
+- [8️⃣ What This PoC Demonstrates](#-8️⃣-what-this-poc-demonstrates)
+- [9️⃣ Future Enhancements](#-9️⃣-future-enhancements)
+- [🔟 Summary](#-🔟-summary)
+
+---
+
+
 ## **📌 1️⃣ Overview**
 
 GitHub **Secret Scanning** automatically detects accidentally committed credentials such as:
@@ -149,4 +165,3 @@ secret-scan
 | Generate Actionable Output | Success |
 | Align with DevSecOps Practices | ✔ Strong Alignment |
 
-This PoC is fully ready for demo and CI/CD expansion.
