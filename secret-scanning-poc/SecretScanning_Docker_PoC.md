@@ -37,6 +37,8 @@ This PoC validates how secret scanning alerts can be:
 Running in Docker means:  
 No GitHub CLI installation required → Runs anywhere → DevSecOps automation ready 🚀
 
+---
+
 ## **🧩 2️⃣ Dockerized Workflow Architecture**
 
 Manual / CI/CD Trigger  
@@ -56,12 +58,16 @@ Security Team Reviews & Fixes
 📌 Currently: executed manually  
 📌 Future: fully automated pipeline integration
 
+---
+
 ## **🗂 3️⃣ Project Structure**
 
 secret-scanning-docker/  
 ├── Dockerfile  
 ├── scan.sh  
 └── results.json (generated after scan)  
+
+---
 
 ## **🏗 4️⃣ Dockerfile Explanation**
 
@@ -90,6 +96,8 @@ RUN chmod +x /app/scan.sh
 ✔ Makes script executable  
 ✔ Defines execution entrypoint
 
+---
+
 ## **🧪 5️⃣ scan.sh Script Explanation**
 
 # !/bin/bash  
@@ -110,6 +118,8 @@ cat results.json | jq
 ✔ Retrieves all alert metadata  
 ✔ Saves & displays JSON output
 
+---
+
 ## **⚙ 6️⃣ How to Run the Scan**
 
 ### **Step 1 - Build Docker Image**
@@ -129,6 +139,8 @@ secret-scan
 - Parsed JSON displayed in terminal
 - results.json generated in local folder
 
+---
+
 ## **📸 7️⃣ Screenshots**
 
 <img width="1298" height="469" alt="image" src="https://github.com/user-attachments/assets/d49d4640-393d-4428-b416-c1fb2aa2bde5" />
@@ -136,6 +148,8 @@ secret-scan
 <img width="1298" height="469" alt="image" src="https://github.com/user-attachments/assets/012f3cc6-c4c6-4bd9-a50f-0ab316a263a9" />
 
 <img width="1296" height="251" alt="image" src="https://github.com/user-attachments/assets/a0e63b64-0855-4335-8920-96a05af9a9cf" />
+
+---
 
 ## **📦 8️⃣ What This PoC Demonstrates**
 
@@ -147,6 +161,8 @@ secret-scan
 | Dockerized CLI for Portability | ✔   |
 | Ready for CI/CD Integration | ⚙ Planned |
 
+---
+
 ## **🚀 9️⃣ Future Enhancements**
 
 | **Initiative** | **Benefit** |
@@ -155,6 +171,8 @@ secret-scan
 | Push Alerts to Teams/Slack | Faster incident response |
 | Generate HTML/PDF Reports | Better compliance evidence |
 | Add filtering (Open only) | Prioritization |
+
+---
 
 ## **🏁 1️⃣0️⃣ Summary**
 
@@ -165,3 +183,4 @@ secret-scan
 | Generate Actionable Output | Success |
 | Align with DevSecOps Practices | ✔ Strong Alignment |
 
+---
