@@ -12,7 +12,9 @@ git clone -b "$BRANCH" "$REPO_URL" repo
 cd repo
 
 codeql database create db --language=javascript --source-root=.
-codeql database analyze db codeql/javascript-queries.qls \
+
+codeql database analyze db \
+  /opt/codeql/javascript/ql/src/codeql-suites/javascript-code-scanning.qls \
   --format=sarifv2.1.0 --output=results.sarif
 
 echo "📌 Scan complete! Results saved to results.sarif"
