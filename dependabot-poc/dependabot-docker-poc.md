@@ -5,19 +5,19 @@
 **Date:** 24 Nov 2025  
 **Contact:** [himanshu.parashar.snaatak@mygurukulam.co](mailto:himanshu.parashar.snaatak@mygurukulam.co)
 
-# **📑 Table of Contents**
+## 📑 Table of Contents
+- [1️⃣ Overview](#1️⃣-overview)
+- [2️⃣ Why This PoC?](#2️⃣-why-this-poc)
+- [3️⃣ Architecture Workflow](#3️⃣-architecture-workflow)
+- [4️⃣ Project Structure](#4️⃣-project-structure)
+- [5️⃣ Dockerfile Explanation](#5️⃣-dockerfile-explanation)
+- [6️⃣ Script Explanation (dependabot_scan.sh)](#6️⃣-script-explanation-dependabot_scansh)
+- [7️⃣ How to Run the Scan](#7️⃣-how-to-run-the-scan)
+- [8️⃣ Sample Output](#8️⃣-sample-output)
+- [9️⃣ What This PoC Demonstrates](#9️⃣-what-this-poc-demonstrates)
+- [🔟 Future Enhancements](#🔟-future-enhancements)
+- [1️⃣1️⃣ Summary](#1️⃣1️⃣-summary)
 
-- 1️⃣ Overview
-- 2️⃣ Why This PoC?
-- 3️⃣ Architecture Workflow
-- 4️⃣ Project Structure
-- 5️⃣ Dockerfile Explanation
-- 6️⃣ Script Explanation (dependabot_scan.sh)
-- 7️⃣ How to Run the Scan
-- 8️⃣ Sample Output
-- 9️⃣ What This PoC Demonstrates
-- 🔟 Future Enhancements
-- 1️⃣1️⃣ Summary
 
 # **1️⃣ Overview**
 
