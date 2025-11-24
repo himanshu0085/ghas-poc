@@ -5,6 +5,7 @@
 **Date:** 24 Nov 2025  
 **Contact:** [himanshu.parashar.snaatak@mygurukulam.co](mailto:himanshu.parashar.snaatak@mygurukulam.co)
 
+---
 ## 📑 Table of Contents
 - [1️⃣ Overview](#1️⃣-overview)
 - [2️⃣ Why This PoC?](#2️⃣-why-this-poc)
@@ -18,6 +19,7 @@
 - [🔟 Future Enhancements](#🔟-future-enhancements)
 - [1️⃣1️⃣ Summary](#1️⃣1️⃣-summary)
 
+---
 
 # **1️⃣ Overview**
 
@@ -35,6 +37,8 @@ This PoC demonstrates how to:
     ✔ Display a clean terminal summary  
     ✔ Prepare for CI/CD automation
 
+---
+
 # **2️⃣ Why This PoC?**
 
 Organizations often need:
@@ -45,6 +49,8 @@ Organizations often need:
 ✔ Automated reporting for audits and reviews
 
 Docker solves all of this.
+
+---
 
 # **3️⃣ Architecture Workflow**
 
@@ -65,6 +71,8 @@ Security Team / Dev Team Review & Fix
 Currently: **Manual execution**  
 Future: **CI/CD automation, Slack alerts, PDF reporting**
 
+---
+
 # **4️⃣ Project Structure**
 
 dependabot-docker/  
@@ -73,6 +81,8 @@ dependabot-docker/
 ├── dependabot_results.json # generated  
 ├── dependabot_report.md # generated  
 └── dependabot_summary.csv # generated  
+
+---
 
 # **5️⃣ Dockerfile Explanation**
 
@@ -102,6 +112,8 @@ RUN chmod +x /app/dependabot_scan.sh
 ✔ Makes script executable  
 ✔ Sets /app as runtime directory
 
+---
+
 # **6️⃣ Script Explanation (dependabot_scan.sh)**
 
 The script:
@@ -115,6 +127,8 @@ The script:
 - dependabot_summary.csv → Excel-friendly summary
 
 ✔ Shows summary in terminal
+
+---
 
 # **7️⃣ How to Run the Scan**
 
@@ -132,6 +146,8 @@ dependabot-scan
 
 Outputs will be saved in your **local folder**.
 
+---
+
 # **8️⃣ Sample Output (Terminal)**
 
 🔍 Fetching Dependabot alerts for repo: himanshu0085/ghas-poc ...  
@@ -147,6 +163,8 @@ Alert #10 | lodash | critical | open
 Alert #9 | lodash | high | open  
 Alert #6 | axios | high | fixed  
 
+---
+
 # **9️⃣ What This PoC Demonstrates**
 
 | **Feature** | **Status** |
@@ -156,6 +174,8 @@ Alert #6 | axios | high | fixed
 | Portable Docker-based scanner | ✔   |
 | Ready for pipeline integration | ✔   |
 | Works with any GitHub repository | ✔   |
+
+---
 
 # **🔟 Future Enhancements**
 
@@ -167,6 +187,8 @@ Alert #6 | axios | high | fixed
 | Severity filtering | Prioritization |
 | Auto-fix PR generation | Faster remediation |
 
+---
+
 # **1️⃣1️⃣ Summary**
 
 | **Objective** | **Result** |
@@ -175,3 +197,5 @@ Alert #6 | axios | high | fixed
 | Extract and parse alerts | ✔ Completed |
 | Provide security reports | ✔ Delivered |
 | Align with DevSecOps | ✔ Strong alignment |
+
+---
