@@ -31,7 +31,6 @@ This PoC demonstrates:
 - Running inside Docker  
 - Producing structured outputs:  
   - `dependabot_results.json`  
-  - `dependabot_report.md`  
   - `dependabot_summary.csv`
 
 ---
@@ -55,7 +54,7 @@ Docker Container (`dependabot-scan`)
 ↓  
 GitHub API → Fetch Dependabot Alerts  
 ↓  
-Reports (JSON + MD + CSV)  
+Reports (JSON + CSV)  
 ↓  
 Security Team Reviews & Fixes
 
@@ -68,7 +67,6 @@ dependabot-docker/
 ├── Dockerfile
 ├── dependabot_scan.sh
 ├── dependabot_results.json      # generated
-├── dependabot_report.md         # generated
 └── dependabot_summary.csv       # generated
 ```
 
@@ -121,7 +119,6 @@ set -euo pipefail
 # dependabot_scan.sh
 # Generates:
 # - dependabot_results.json
-# - dependabot_report.md
 # - dependabot_summary.csv
 
 if [ -z "${GH_TOKEN:-}" ] || [ -z "${REPO:-}" ]; then
@@ -236,8 +233,7 @@ jq -r '.[] | "Alert #" + (.number|tostring) + " | " +
 - Authenticates GitHub using GH_TOKEN  
 - Calls `/repos/<owner>/<repo>/dependabot/alerts`  
 - Creates:
-  - Raw JSON  
-  - Markdown report  
+  - Raw JSON   
   - CSV summary  
 
 - Prints a clean terminal summary  
@@ -267,7 +263,6 @@ docker run   -e GH_TOKEN="<YOUR_PAT>"   -e REPO="himanshu0085/ghas-poc"   -v $(p
 📄 Raw JSON saved to /app/dependabot_results.json
 ✅ Reports generated:
  - dependabot_results.json
- - dependabot_report.md
  - dependabot_summary.csv
 
 Top alerts:
