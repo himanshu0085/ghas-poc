@@ -117,6 +117,7 @@ RUN chmod +x /app/dependabot_scan.sh
 # **6️⃣ Script Explanation (dependabot_scan.sh)**
 
 The script:
+```
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -232,7 +233,7 @@ jq -r '.[] | "Alert #" + (.number|tostring) + " | " +
        (.security_advisory.severity // .security_vulnerability.severity) +
        " | " +
        .state' "$OUT_JSON" | sed -n '1,20p'
-
+```
 
 
 ✔ Authenticates using \$GH_TOKEN  
