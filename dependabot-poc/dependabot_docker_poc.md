@@ -276,6 +276,10 @@ Alert #11 | lodash | high   | open
 Alert #10 | lodash | critical | open
 ```
 
+<img width="1135" height="577" alt="image" src="https://github.com/user-attachments/assets/db1891b5-2311-4ce3-b1cd-184dab3936f6" />
+
+<img width="1282" height="695" alt="image" src="https://github.com/user-attachments/assets/0b47aa0f-bd0f-47c0-8d5d-6c61d6a317ab" />
+
 ---
 
 ## PoC Demonstrates
