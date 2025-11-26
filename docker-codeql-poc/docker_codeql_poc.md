@@ -5,20 +5,20 @@
 **Date:** 26 Nov 2025  
 **Contact:** [himanshu.parashar.snaatak@mygurukulam.co](mailto:himanshu.parashar.snaatak@mygurukulam.co)
 
-## **Table of Contents**
+## Table of Contents
+- [Overview](#overview)
+- [Why This PoC](#why-this-poc)
+- [Architecture Workflow](#architecture-workflow)
+- [Project Structure](#project-structure)
+- [Supported Languages](#supported-languages)
+- [Dockerfile Explanation](#dockerfile-explanation)
+- [Script Explanation - run-codeqlsh](#script-explanation---run-codeqlsh)
+- [How to Run](#how-to-run)
+- [Sample Output](#sample-output)
+- [PoC Demonstrates](#poc-demonstrates)
+- [Future Enhancements](#future-enhancements)
+- [Summary](#summary)
 
-- Overview
-- Why This PoC
-- Architecture Workflow
-- Project Structure
-- Supported Languages
-- Dockerfile Explanation
-- Script Explanation (run-codeql.sh)
-- How to Run
-- Sample Output
-- PoC Demonstrates
-- Future Enhancements
-- Summary
 
 ## **Overview**
 
