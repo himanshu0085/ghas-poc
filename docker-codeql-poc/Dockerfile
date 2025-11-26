@@ -1,21 +1,33 @@
 FROM ubuntu:22.04
 
-# Install dependencies
+# --------------------------
+# Install dependencies for all languages
+# --------------------------
 RUN apt-get update && apt-get install -y \
-    curl unzip git jq bash \
+    curl unzip git tar jq bash \
+    python3 python3-pip \
+    openjdk-11-jdk \
+    golang \
     && rm -rf /var/lib/apt/lists/*
 
-# Install CodeQL CLI
-RUN curl -L -o codeql.zip https://github.com/github/codeql-cli-binaries/releases/latest/download/codeql-linux64.zip \
-    && unzip codeql.zip -d /opt \
-    && rm codeql.zip
+# Ensure "python" command exists (CodeQL extractor expects it)
+RUN ln -sf /usr/bin/python3 /usr/bin/python
 
-ENV PATH="/opt/codeql:/opt/codeql/codeql:$PATH"
+# --------------------------
+# 📌 Download CodeQL bundle automatically
+# --------------------------
+ARG CODEQL_VERSION=v2.23.6
+RUN curl -L \
+    -o /tmp/codeql.tar.gz \
+    https://github.com/github/codeql-action/releases/download/codeql-bundle-${CODEQL_VERSION}/codeql-bundle-linux64.tar.gz \
+    && mkdir -p /opt/codeql \
+    && tar -xzf /tmp/codeql.tar.gz -C /opt/codeql --strip-components=1 \
+    && rm /tmp/codeql.tar.gz
 
-# Clone entire CodeQL packs repository (includes metadata + dependencies)
-RUN mkdir -p /opt/codeql/packs \
-    && git clone --depth 1 https://github.com/github/codeql.git /opt/codeql/packs/codeql
+# Add CodeQL CLI to PATH
+ENV PATH="/opt/codeql:/opt/codeql/codeql:/opt/codeql/bin:${PATH}"
 
+# Working directory inside container
 WORKDIR /scan
 
 ENTRYPOINT ["/bin/bash"]
