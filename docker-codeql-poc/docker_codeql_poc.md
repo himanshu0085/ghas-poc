@@ -132,17 +132,26 @@ Operations performed:
 docker build -t codeql-scanner .  
 ```
 
+<img width="1298" height="513" alt="image" src="https://github.com/user-attachments/assets/1329b064-1124-498c-ac98-3d1ac51f7c66" />
+
+
 ### **Step 2 - Execute scan**
 
 ```
 docker run --rm codeql-scanner /scan/run-codeql.sh <https://github.com/><user>/<repo>.git
 ```
 
+<img width="1298" height="513" alt="image" src="https://github.com/user-attachments/assets/87decb22-88cc-4577-95c0-7a6270d42090" />
+
+
 ### **Step 3 - Open reports**
 cd /scan/repo  
 ```
 cat report.csv
 ```
+<img width="1301" height="517" alt="image" src="https://github.com/user-attachments/assets/c42a7937-5ac8-49a8-84c8-e9693beb0683" />
+
+
 If you want to see the report on browser first hit this below command in /scan/repo
 
 ```
@@ -156,6 +165,9 @@ python3 -m http.server 8080
 | HTML | http://&lt;ip&gt;:8080/report.html |
 | CSV | http://&lt;ip&gt;:8080/report.csv |
 | SARIF | http://&lt;ip&gt;:8080/results.sarif |
+
+<img width="1297" height="446" alt="image" src="https://github.com/user-attachments/assets/2c2101df-7569-46a9-81eb-d97a511002b4" />
+
 
 ## **Sample Output**
 
