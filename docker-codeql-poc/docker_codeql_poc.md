@@ -128,11 +128,15 @@ Operations performed:
 
 ### **Step 1 - Build image**
 
+```
 docker build -t codeql-scanner .  
+```
 
 ### **Step 2 - Execute scan**
 
+```
 docker run --rm codeql-scanner /scan/run-codeql.sh <https://github.com/><user>/<repo>.git
+```
 
 ### **Step 3 - Open reports**
 cd /scan/repo  
