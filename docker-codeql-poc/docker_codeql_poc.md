@@ -1,11 +1,11 @@
-# **🚀CodeQL - Dockerized Multi-Language Security Scanner (PoC)**
+# **CodeQL - Dockerized Multi-Language Security Scanner (PoC)**
 
 **Owner:** Himanshu Parashar  
 **Mentors:** Deepak Gupta / Deepak Chauhan  
 **Date:** 26 Nov 2025  
 **Contact:** [himanshu.parashar.snaatak@mygurukulam.co](mailto:himanshu.parashar.snaatak@mygurukulam.co)
 
-## **📌 Table of Contents**
+## **Table of Contents**
 
 - Overview
 - Why This PoC
@@ -20,7 +20,7 @@
 - Future Enhancements
 - Summary
 
-## **1️⃣ Overview**
+## **Overview**
 
 GitHub **CodeQL** is a semantic code analysis engine that identifies high-risk vulnerabilities in source code.
 
@@ -40,7 +40,7 @@ GitHub **CodeQL** is a semantic code analysis engine that identifies high-risk v
 
 No local CodeQL installation required.
 
-## **2️⃣ Why This PoC**
+## **Why This PoC**
 
 | **Problem** | **Solution** |
 | --- | --- |
@@ -51,7 +51,7 @@ No local CodeQL installation required.
 
 Result → Streamlined "shift-left security" without environment friction.
 
-## **3️⃣ Architecture Workflow**
+## **Architecture Workflow**
 
 Developer / CI Trigger  
 ↓  
@@ -67,7 +67,7 @@ Run CodeQL queries
 ↓  
 Generate reports → SARIF + HTML + CSV  
 
-## **4️⃣ Project Structure**
+## **Project Structure**
 
 codeql-docker/  
 ├── Dockerfile  
@@ -82,7 +82,7 @@ codeql-docker/
 │ ├── report.html  
 │ └── report.csv  
 
-## **5️⃣ Supported Languages**
+## **Supported Languages**
 
 | **Language** | **Support** |
 | --- | --- |
@@ -93,7 +93,7 @@ codeql-docker/
 
 ⚠️ Java auto-build may fail if no build tool exists - **scanning still continues**.
 
-## **6️⃣ Dockerfile Explanation**
+## **Dockerfile Explanation**
 
 | **Component** | **Purpose** |
 | --- | --- |
@@ -105,7 +105,7 @@ codeql-docker/
 
 Everything needed for scanning is contained in **one Docker image**.
 
-## **7️⃣ Script Explanation - run-codeql.sh**
+## **Script Explanation - run-codeql.sh**
 
 Operations performed:
 
@@ -124,7 +124,7 @@ Operations performed:
 - report.csv → Excel-ready
 - report.html → Security dashboard
 
-## **8️⃣ How to Run**
+## **How to Run**
 
 ### **Step 1 - Build image**
 
@@ -135,10 +135,15 @@ docker build -t codeql-scanner .
 docker run --rm codeql-scanner /scan/run-codeql.sh <https://github.com/><user>/<repo>.git
 
 ### **Step 3 - Open reports**
-
-docker run -it -p 8080:8080 codeql-scanner /bin/bash  
 cd /scan/repo  
+```
+cat report.csv
+```
+If you want to see the report on browser first hit this below command in /scan/repo
+
+```
 python3 -m http.server 8080  
+```
 
 ### **Step 4 - Access reports from browser**
 
@@ -148,7 +153,7 @@ python3 -m http.server 8080
 | CSV | http://&lt;ip&gt;:8080/report.csv |
 | SARIF | http://&lt;ip&gt;:8080/results.sarif |
 
-## **9️⃣ Sample Output**
+## **Sample Output**
 
 ### **Terminal JSON (example)**
 
@@ -167,7 +172,7 @@ Rule ID,Severity,Message,File,Line
 
 📌 HTML report provides **sortable, severity-color-coded vulnerability dashboard**.
 
-## **🔟 PoC Demonstrates**
+## **PoC Demonstrates**
 
 | **Capability** | **Status** |
 | --- | --- |
@@ -177,7 +182,7 @@ Rule ID,Severity,Message,File,Line
 | CI/CD Ready | ✔   |
 | No CodeQL local dependency | ✔   |
 
-## **🔮 Future Enhancements**
+## **Future Enhancements**
 
 | **Enhancement** | **Benefit** |
 | --- | --- |
@@ -187,7 +192,7 @@ Rule ID,Severity,Message,File,Line
 | CI failure based on severity | Policy enforcement |
 | Custom CodeQL query packs | Organization-wide secure coding rules |
 
-## **✅ Summary**
+## **Summary**
 
 | **Objective** | **Result** |
 | --- | --- |
