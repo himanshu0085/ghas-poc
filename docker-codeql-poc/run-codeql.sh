@@ -218,3 +218,5 @@ echo "HTML report  :  $RESULT_HTML"
 echo "CSV report   :  $RESULT_CSV"
 echo ""
 echo "Open report.html in browser OR report.csv in Excel"
+
+
