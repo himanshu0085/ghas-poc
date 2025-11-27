@@ -31,3 +31,4 @@ ENV PATH="/opt/codeql:/opt/codeql/codeql:/opt/codeql/bin:${PATH}"
 WORKDIR /scan
 
 ENTRYPOINT ["/bin/bash"]
+
